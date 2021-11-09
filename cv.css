@@ -1,0 +1,39 @@
+#topheader {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    background-color: #161E54;
+}
+
+.webTitle {
+    display: block;
+    color: #fff;
+    font-family: monospace;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+strong {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.hidden {
+    visibility: hidden;
+    padding: 30px;
+}
+
+.btn {
+    padding: 10px auto;
+    margin: 10px;
+}
+
+#generate {
+    display: block;
+    padding: 10px;
+}
+
+@page {
+    size: 21cm 29.7cm;
+    margin: 30mm 45mm 30mm 45mm;
+     /* change the margins as you want them to be. */
+}

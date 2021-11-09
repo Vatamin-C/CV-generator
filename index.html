@@ -1,0 +1,153 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="cv.css">
+  <title>CV Form Generator</title>
+</head>
+
+<body>
+  <header class="container-fluid" id="topheader">
+    <div class="webTitle bg-transparent">
+      <p><strong>Free Generate</strong> your CV Form in here</p>
+    </div>
+    <div class="hidden"></div>
+    <nav class="navbar sticky-top navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">About</a>
+        <a class="navbar-brand" href="#">Contacts Us</a>
+      </div>
+    </nav>
+  </header>
+  <main class="container-fluid">
+    <h1 id="cv" style="display: flex; justify-content: center; margin: 10px auto; color: #950101">Curriculum Vitae</h1>
+    <div style="display: flex; justify-content: flex-end; margin-bottom: 20px; margin-top: 15px;">
+      <img src="photo/myLogo.jpg" class="img-fluid" alt="Profile">
+      <div style="visibility: hidden; padding: auto;"></div>
+      <input type="file" name="Profile" id="file" style="padding: 30px;">
+    </div>
+    <form style="max-width: 800px;" class="container-md">
+      <div class="row mb-3">
+        <label for="name" class="col-sm-2 col-form-label" id="name">Name </label>
+        <div class="col-sm-10">
+          <input type="name" class="form-control" id="name1" placeholder="Enter your full name">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="father" class="col-sm-2 col-form-label" id="father">Father's Name</label>
+        <div class="col-sm-10">
+          <input type="name" class="form-control" id="father1" placeholder="Enter your father's name">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="dateOfBirth" class="col-sm-2 col-form-label" id="dateOfBirth">Date Of Birth </label>
+        <div class="col-sm-10">
+          <input type="date" id="date" class="form-control">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="nationality" id="nationality" class="col-sm-2 col-form-label">Nationality </label>
+        <div class="col-sm-10">
+          <input type="name" class="form-control" placeholder="Eg: Burmese" id="nationality1">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="gender" id="gender" class="col-sm-2 col-form-label">Gender </label>
+        <div class="col-sm-10">
+          <input type="Gender" id="gender1" class="form-control" placeholder="Male / Female / Other">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="N.R.C Number" id="nrc" class="col-sm-2 col-form-label">N.R.C Number </label>
+        <div class="col-sm-10">
+          <input type="name" id="nrc1" class="form-control" placeholder="Eg: 9/NyaOuNa(N)123456">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="matrial" id="marital" class="col-sm-2 col-form-label">Marital Status </label>
+        <div class="col-sm-10">
+          <input type="marital" id="marital1" class="form-control" placeholder="Married / Single">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="education" id="education" class="col-sm-2 col-form-label">Education </label>
+        <div class="col-sm-10">
+          <input type="Education" id="education1" class="form-control" placeholder="Eg: CDM Student (auto hired)">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="education" id="workPosition" class="col-sm-2 col-form-label">Work Position </label>
+        <div class="col-sm-10">
+          <input type="workposition" id="workPosition1" class="form-control" placeholder="Eg: Site Engineer">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="education" id="contact" class="col-sm-2 col-form-label">Contact info </label>
+        <div class="col-sm-10">
+          <input type="contact" id="contact1" class="form-control" placeholder="Eg: 09-123456 / abcdef@gmail.com">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="Address" class="col-sm-2 col-form-label" id="address">Address </label>
+        <textarea id="address1" class="form-control" aria-label="With textarea"
+          placeholder="Current Address / Hometown / etc..."></textarea>
+      </div>
+      <div class="row mb-3">
+        <label for="Experiences" id="experiences" class="col-sm-2 col-form-label">Work Experiences </label>
+        <textarea class="form-control" id="experiences1" aria-label="With textarea"></textarea>
+        <div style="padding: 10px;">
+          <label for="certificates">Certificates and other </label>
+          <input type="file" id="certificates" multiple style="padding-top: 10px;"></div>
+      </div>
+    </form>
+  </main>
+  <section id="generate" class="container-fluid bg-secondary">
+    <div style="display: flex; justify-content: space-around;">
+      <button type="button" class="btn btn-info" id="myanmarLanguage">Change to Myanmar</button>
+      <button type="button" class="btn btn-info">Customize</button>
+    </div>
+    <div id="customization">
+      
+    </div>
+    <div style="display: flex; justify-content: center;">
+      <button type="button" class="btn btn-danger" id="finalGenerate">Generate your CV</button>
+    </div>
+  </section>
+  <footer style="background-color: #3F0713; padding: 30px;">
+    <div>
+      <h2
+        style="color: #FEFBF3; font-weight: bold; font-family: 'Courier New', Courier, monospace; display: flex; justify-content: center; border-style: outset; border-color: yellow; border-radius: 3px; padding: 15px;">
+        Thanks for using my website!</h2>
+    </div>
+    <div style="color: white; display: flex; align-items: center; flex-direction: column;">
+      <h3>Good Luck for your Work</h3>
+      <hr size="5px" noshade width="300px" style="color: greenyellow;">
+    </div>
+    <div style="display: flex; justify-content: space-around; padding-top: 20px;">
+      <div style="display: flex; flex-direction: column;">
+        <button type="button" class="btn btn-light">Suppport</button>
+        <button type="button" class="btn btn-light">Feedback</button>
+      </div>
+      <div style="display: flex; flex-direction: column;">
+        <button type="button" class="btn btn-light">Terms and Conditions</button>
+        <button type="button" class="btn btn-light">Privacy Policy</button>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; padding: 30px;">
+      <p>
+        <h5>&copy; copyright by Vatamin-C</h5>
+      </p>
+    </div>
+  </footer>
+
+  <script src="cv.js"></script>
+</body>
+
+</html>
